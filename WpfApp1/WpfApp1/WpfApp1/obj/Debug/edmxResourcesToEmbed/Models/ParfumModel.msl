@@ -1,0 +1,82 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Mapping Space="C-S" xmlns="http://schemas.microsoft.com/ado/2009/11/mapping/cs">
+  <EntityContainerMapping StorageEntityContainer="Хранилище ParfumeriaModelContainer" CdmEntityContainer="ParfumeriaEntities">
+    <EntitySetMapping Name="Clients">
+      <EntityTypeMapping TypeName="ParfumeriaModel.Clients">
+        <MappingFragment StoreEntitySet="Clients">
+          <ScalarProperty Name="id_client" ColumnName="id_client" />
+          <ScalarProperty Name="id_akk" ColumnName="id_akk" />
+          <ScalarProperty Name="name_c" ColumnName="name_c" />
+          <ScalarProperty Name="surname_c" ColumnName="surname_c" />
+          <ScalarProperty Name="patronymic_c" ColumnName="patronymic_c" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="Orders">
+      <EntityTypeMapping TypeName="ParfumeriaModel.Orders">
+        <MappingFragment StoreEntitySet="Orders">
+          <ScalarProperty Name="id_order" ColumnName="id_order" />
+          <ScalarProperty Name="id_product" ColumnName="id_product" />
+          <ScalarProperty Name="count" ColumnName="count" />
+          <ScalarProperty Name="cost" ColumnName="cost" />
+          <ScalarProperty Name="id_pvz" ColumnName="id_pvz" />
+          <ScalarProperty Name="id_client" ColumnName="id_client" />
+          <ScalarProperty Name="data_zakaza" ColumnName="data_zakaza" />
+          <ScalarProperty Name="data_dostavki" ColumnName="data_dostavki" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="Parfum">
+      <EntityTypeMapping TypeName="ParfumeriaModel.Parfum">
+        <MappingFragment StoreEntitySet="Parfum">
+          <ScalarProperty Name="id_product" ColumnName="id_product" />
+          <ScalarProperty Name="name_product" ColumnName="name_product" />
+          <ScalarProperty Name="name_brend" ColumnName="name_brend" />
+          <ScalarProperty Name="price" ColumnName="price" />
+          <ScalarProperty Name="count" ColumnName="count" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="punkt_vidachi">
+      <EntityTypeMapping TypeName="ParfumeriaModel.punkt_vidachi">
+        <MappingFragment StoreEntitySet="punkt_vidachi">
+          <ScalarProperty Name="id_pvz" ColumnName="id_pvz" />
+          <ScalarProperty Name="address" ColumnName="address" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="sysdiagrams">
+      <EntityTypeMapping TypeName="ParfumeriaModel.sysdiagrams">
+        <MappingFragment StoreEntitySet="sysdiagrams">
+          <ScalarProperty Name="name" ColumnName="name" />
+          <ScalarProperty Name="principal_id" ColumnName="principal_id" />
+          <ScalarProperty Name="diagram_id" ColumnName="diagram_id" />
+          <ScalarProperty Name="version" ColumnName="version" />
+          <ScalarProperty Name="definition" ColumnName="definition" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="Users">
+      <EntityTypeMapping TypeName="ParfumeriaModel.Users">
+        <MappingFragment StoreEntitySet="Users">
+          <ScalarProperty Name="id_akk" ColumnName="id_akk" />
+          <ScalarProperty Name="password" ColumnName="password" />
+          <ScalarProperty Name="login" ColumnName="login" />
+          <ScalarProperty Name="role" ColumnName="role" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="Workers">
+      <EntityTypeMapping TypeName="ParfumeriaModel.Workers">
+        <MappingFragment StoreEntitySet="Workers">
+          <ScalarProperty Name="id_worker" ColumnName="id_worker" />
+          <ScalarProperty Name="id_akk" ColumnName="id_akk" />
+          <ScalarProperty Name="role" ColumnName="role" />
+          <ScalarProperty Name="name_w" ColumnName="name_w" />
+          <ScalarProperty Name="surname_w" ColumnName="surname_w" />
+          <ScalarProperty Name="patronymic_w" ColumnName="patronymic_w" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+  </EntityContainerMapping>
+</Mapping>
